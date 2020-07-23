@@ -6,3 +6,69 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Card */
+
+.card-product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  overflow: hidden;
+  height: 20em;
+  width: 51em;
+}
+
+.card-product img:first-child {
+  width: 240px;
+  object-fit: cover;
+}
+
+.card-product-info {
+  margin: 24px 38px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user img:first-child {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: top center;
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-details {
+  margin-left: 18px;
+}
+
+.icon {
+  background: hsl(210, 46%, 95%);
+  padding: 8px;
+  border-radius: 50%;
+}
