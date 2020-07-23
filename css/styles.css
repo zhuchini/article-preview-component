@@ -7,19 +7,23 @@
   color: hsl(228, 45%, 44%);
 }
 
-body {
+html, body {
   background-color: hsl(210, 46%, 95%);
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
   height: 100%;
-}
-
-#container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+/* #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
 
 /* Card */
 
@@ -30,7 +34,7 @@ body {
   display: flex;
   overflow: hidden;
   height: 20em;
-  width: 51em;
+  width: 52em;
 }
 
 .card-product img:first-child {
