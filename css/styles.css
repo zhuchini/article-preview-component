@@ -18,28 +18,22 @@ html, body {
   flex-direction: column;
 }
 
-/* #container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
 /* Card */
 
 .card-product {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
   display: flex;
-  overflow: hidden;
   height: 20em;
   width: 52em;
 }
 
-.card-product img:first-child {
+.drawer {
   width: 240px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card-product-info {
@@ -52,7 +46,7 @@ html, body {
   justify-content: space-between;
 }
 
-.user img:first-child {
+.user-info img {
   width: 40px;
   height: 40px;
   background-size: cover;
@@ -73,6 +67,76 @@ html, body {
 
 .icon {
   background: hsl(210, 46%, 95%);
-  padding: 8px;
   border-radius: 50%;
+  padding: 6px;
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+/* Share Popup Bubble */
+
+.icon .popuptext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  width: 14em;
+  height: 3em;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  line-height: 1;
+  border-radius: 10px;
+  padding: 3px 10px;
+  position: absolute;
+  bottom: 180%;
+  left: 40%;
+  margin-left: -101px;
+}
+
+.icon .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.icon .show {
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+.social {
+  text-align: center;
+}
+
+.social ul {
+  float: left;
+  padding: 0 4px;
+}
+
+.social ul li {
+  float: left;
+  padding-left: 14px;
+  list-style-type: none;
+}
+
+.social ul img {
+  height: 1.3em;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
