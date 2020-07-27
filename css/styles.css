@@ -196,9 +196,8 @@ html, body {
     padding-left: 24px;
     left: -82px;
     bottom: -18px;
-    height: 50px;
-    width: 23em;
-    z-index: 0;
+    height: 5em;
+    width: 19em;
   }
 
   .social .popuptext::after {
@@ -209,13 +208,8 @@ html, body {
     padding-left: 11px;
   }
 
-  /* svg {
-    z-index: 1;
-  } */
-
   .popuptext {
-    font-size: 10px;
-    letter-spacing: 1.5px;
+    font-size: 11px;
+    letter-spacing: 1px;
   }
-
 }
