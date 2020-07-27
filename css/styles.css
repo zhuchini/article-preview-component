@@ -21,10 +21,10 @@ html, body {
 /* Card */
 
 .card-product {
+  display: flex;
   background: white;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.18);
-  display: flex;
   height: 20em;
   width: 52em;
 }
@@ -139,4 +139,83 @@ html, body {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+/* Media Queries */
+
+/* Mobile */
+
+@media (max-width: 375px) {
+
+  body {
+    font-size: 1.5vmax;
+    line-height: 1.6;
+  }
+
+  .card-product {
+    flex-direction: column;
+    overflow: hidden;
+    height: 44em;
+    width: 25em;
+  }
+
+  .drawer {
+    max-width: 100%;
+    object-fit: cover;
+    height: 16em;
+    border-radius: 0;
+  }
+
+  .card-product-info {
+    margin: 25px;
+  }
+
+  .card-product-info h2 {
+    font-size: 13px;
+  }
+
+  .user-info img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .user {
+    margin-top: 16px;
+  }
+
+  .user-details {
+    margin-left: 12px;
+  }
+
+  /* Mobile Active State */
+
+  .social .popuptext {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0;
+    justify-content: flex-start;
+    padding-left: 24px;
+    left: -82px;
+    bottom: -18px;
+    height: 50px;
+    width: 23em;
+    z-index: 0;
+  }
+
+  .social .popuptext::after {
+    visibility: hidden;
+  }
+
+  .social ul li {
+    padding-left: 11px;
+  }
+
+  /* svg {
+    z-index: 1;
+  } */
+
+  .popuptext {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
 }
